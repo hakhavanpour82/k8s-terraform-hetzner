@@ -1,0 +1,39 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.6",
+  "serial": 5,
+  "lineage": "e460f5e5-b1ea-a3ac-92a6-d7ffe942732d",
+  "outputs": {
+    "server_ip": {
+      "value": "178.105.232.61",
+      "type": "string"
+    },
+    "server_name": {
+      "value": "k8s-node",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "hcloud_ssh_key",
+      "name": "k8s_key",
+      "provider": "provider[\"registry.terraform.io/hetznercloud/hcloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "fingerprint": "f8:22:af:56:cc:db:36:26:94:45:e0:b5:fc:72:2d:b8",
+            "id": "114119173",
+            "labels": {},
+            "name": "k8s-ssh-key",
+            "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGloynd4b1IvjW5nkMRfC/FnXPgqYkfyIWVTtDVJIi2Y hakhavanpour82@gmail.com\n"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

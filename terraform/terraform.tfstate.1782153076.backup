@@ -1,0 +1,68 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.6",
+  "serial": 1,
+  "lineage": "e460f5e5-b1ea-a3ac-92a6-d7ffe942732d",
+  "outputs": {
+    "server_ip": {
+      "value": "178.105.232.61",
+      "type": "string"
+    },
+    "server_name": {
+      "value": "observability",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "hcloud_server",
+      "name": "k8s_node",
+      "provider": "provider[\"registry.terraform.io/hetznercloud/hcloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allow_deprecated_images": null,
+            "backup_window": "",
+            "backups": false,
+            "datacenter": "nbg1-dc3",
+            "delete_protection": false,
+            "firewall_ids": [
+              11173086
+            ],
+            "id": "143650243",
+            "ignore_remote_firewall_ids": null,
+            "image": "ubuntu-24.04",
+            "ipv4_address": "178.105.232.61",
+            "ipv6_address": "2a01:4f8:1c18:de00::1",
+            "ipv6_network": "2a01:4f8:1c18:de00::/64",
+            "iso": null,
+            "keep_disk": null,
+            "labels": {
+              "purpose": "observability"
+            },
+            "location": "nbg1",
+            "name": "observability",
+            "network": [],
+            "placement_group_id": 0,
+            "primary_disk_size": 40,
+            "public_net": [],
+            "rebuild_protection": false,
+            "rescue": null,
+            "server_type": "cx23",
+            "shutdown_before_deletion": null,
+            "ssh_keys": null,
+            "status": "running",
+            "timeouts": null,
+            "user_data": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
